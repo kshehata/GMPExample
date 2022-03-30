@@ -12,9 +12,9 @@
 
 using std::string;
 
-//string NS2Cpp(const NSString *str) {
-//    return [str cStringUsingEncoding:[NSString defaultCStringEncoding]];
-//}
+string NS2Cpp(const NSString *str) {
+    return [str cStringUsingEncoding:[NSString defaultCStringEncoding]];
+}
 
 NSString *Cpp2NS(const string& str) {
     return [NSString stringWithCString:str.c_str()
@@ -25,7 +25,14 @@ NSString *Cpp2NS(const string& str) {
 -(NSString*)multiply:(NSNumber*)a with:(NSNumber*)b {
     mpz_class x([a longValue]);
     mpz_class y([b longValue]);
-    mpz_class r = x*y;
+    mpz_class r = x * y;
+    return Cpp2NS(r.get_str());
+}
+
+-(NSString*)multiplyStrings:(NSString*)a with:(NSString*)b {
+    mpz_class x(NS2Cpp(a));
+    mpz_class y(NS2Cpp(b));
+    mpz_class r = x * y;
     return Cpp2NS(r.get_str());
 }
 @end

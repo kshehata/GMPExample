@@ -9,4 +9,5 @@
 
 @interface GMPExample : NSObject
 -(NSString*)multiply:(NSNumber*)a with:(NSNumber*)b;
+-(NSString*)multiplyStrings:(NSString*)a with:(NSString*)b;
 @end

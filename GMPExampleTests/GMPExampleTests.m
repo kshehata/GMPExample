@@ -26,6 +26,7 @@
 
 - (void)testMultiply {
     XCTAssertEqualObjects([gmp multiply:@6 with:@7], @"42");
+    XCTAssertEqualObjects([gmp multiplyStrings:@"6" with:@"7"], @"42");
 }
 
 
