@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E177F13EE7B1C70A56D4539F /* Pods_GMPExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */; };
-		E2E1BBA327F4391F003F0B5A /* GMPExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E1BBA227F4391F003F0B5A /* GMPExample.m */; };
 		E2E1BBA427F4391F003F0B5A /* GMPExample.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2E1BBA127F4391F003F0B5A /* GMPExample.h */; };
+		E2E1BBAB27F43F52003F0B5A /* GMPExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 		6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample.debug.xcconfig"; path = "Target Support Files/Pods-GMPExample/Pods-GMPExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGMPExample.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E1BBA127F4391F003F0B5A /* GMPExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPExample.h; sourceTree = "<group>"; };
-		E2E1BBA227F4391F003F0B5A /* GMPExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPExample.m; sourceTree = "<group>"; };
+		E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GMPExample.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E2E1BBA127F4391F003F0B5A /* GMPExample.h */,
-				E2E1BBA227F4391F003F0B5A /* GMPExample.m */,
+				E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */,
 			);
 			path = GMPExample;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E1BBA327F4391F003F0B5A /* GMPExample.m in Sources */,
+				E2E1BBAB27F43F52003F0B5A /* GMPExample.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
