@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3B9A9EB2B35C260BC7BF458 /* Pods_GMPExample_GMPExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C71F109ACC5D9C9EE3D9221 /* Pods_GMPExample_GMPExampleTests.framework */; };
 		E177F13EE7B1C70A56D4539F /* Pods_GMPExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */; };
 		E2E1BBA427F4391F003F0B5A /* GMPExample.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2E1BBA127F4391F003F0B5A /* GMPExample.h */; };
 		E2E1BBAB27F43F52003F0B5A /* GMPExample.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */; };
+		E2E1BBB327F44002003F0B5A /* GMPExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E1BBB227F44002003F0B5A /* GMPExampleTests.m */; };
+		E2E1BBB427F44002003F0B5A /* libGMPExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2E1BBB527F44002003F0B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E1BB9627F4391F003F0B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E1BB9D27F4391F003F0B5A;
+			remoteInfo = GMPExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E2E1BB9C27F4391F003F0B5A /* CopyFiles */ = {
@@ -28,10 +41,15 @@
 /* Begin PBXFileReference section */
 		0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMPExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1847B165F8CF484B40D450AF /* Pods-GMPExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample.release.xcconfig"; path = "Target Support Files/Pods-GMPExample/Pods-GMPExample.release.xcconfig"; sourceTree = "<group>"; };
+		27C3803A8A153D5E98DA6432 /* Pods-GMPExample-GMPExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample-GMPExampleTests.release.xcconfig"; path = "Target Support Files/Pods-GMPExample-GMPExampleTests/Pods-GMPExample-GMPExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		469522CB9AEB178CA33DF603 /* Pods-GMPExample-GMPExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample-GMPExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GMPExample-GMPExampleTests/Pods-GMPExample-GMPExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample.debug.xcconfig"; path = "Target Support Files/Pods-GMPExample/Pods-GMPExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9C71F109ACC5D9C9EE3D9221 /* Pods_GMPExample_GMPExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMPExample_GMPExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGMPExample.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E1BBA127F4391F003F0B5A /* GMPExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPExample.h; sourceTree = "<group>"; };
 		E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GMPExample.mm; sourceTree = "<group>"; };
+		E2E1BBB027F44002003F0B5A /* GMPExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMPExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E1BBB227F44002003F0B5A /* GMPExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPExampleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2E1BBAD27F44002003F0B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E1BBB427F44002003F0B5A /* libGMPExample.a in Frameworks */,
+				A3B9A9EB2B35C260BC7BF458 /* Pods_GMPExample_GMPExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */,
+				9C71F109ACC5D9C9EE3D9221 /* Pods_GMPExample_GMPExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,6 +87,8 @@
 			children = (
 				6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */,
 				1847B165F8CF484B40D450AF /* Pods-GMPExample.release.xcconfig */,
+				469522CB9AEB178CA33DF603 /* Pods-GMPExample-GMPExampleTests.debug.xcconfig */,
+				27C3803A8A153D5E98DA6432 /* Pods-GMPExample-GMPExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E2E1BBA027F4391F003F0B5A /* GMPExample */,
+				E2E1BBB127F44002003F0B5A /* GMPExampleTests */,
 				E2E1BB9F27F4391F003F0B5A /* Products */,
 				4B0424DB6D1AD430C0E4534B /* Pods */,
 				3A997CECA068F363C305147F /* Frameworks */,
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */,
+				E2E1BBB027F44002003F0B5A /* GMPExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +120,14 @@
 				E2E1BBAA27F43F52003F0B5A /* GMPExample.mm */,
 			);
 			path = GMPExample;
+			sourceTree = "<group>";
+		};
+		E2E1BBB127F44002003F0B5A /* GMPExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E1BBB227F44002003F0B5A /* GMPExampleTests.m */,
+			);
+			path = GMPExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +151,26 @@
 			productReference = E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		E2E1BBAF27F44002003F0B5A /* GMPExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E1BBB727F44002003F0B5A /* Build configuration list for PBXNativeTarget "GMPExampleTests" */;
+			buildPhases = (
+				FEC7FA874F6098AFB32AC7B9 /* [CP] Check Pods Manifest.lock */,
+				E2E1BBAC27F44002003F0B5A /* Sources */,
+				E2E1BBAD27F44002003F0B5A /* Frameworks */,
+				E2E1BBAE27F44002003F0B5A /* Resources */,
+				5331E94885BF43E014763C0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E1BBB627F44002003F0B5A /* PBXTargetDependency */,
+			);
+			name = GMPExampleTests;
+			productName = GMPExampleTests;
+			productReference = E2E1BBB027F44002003F0B5A /* GMPExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +181,9 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					E2E1BB9D27F4391F003F0B5A = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E2E1BBAF27F44002003F0B5A = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -139,11 +202,39 @@
 			projectRoot = "";
 			targets = (
 				E2E1BB9D27F4391F003F0B5A /* GMPExample */,
+				E2E1BBAF27F44002003F0B5A /* GMPExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E2E1BBAE27F44002003F0B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
+		5331E94885BF43E014763C0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMPExample-GMPExampleTests/Pods-GMPExample-GMPExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMPExample-GMPExampleTests/Pods-GMPExample-GMPExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMPExample-GMPExampleTests/Pods-GMPExample-GMPExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F7442E019E975CE3D1323DBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +257,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FEC7FA874F6098AFB32AC7B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMPExample-GMPExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -177,7 +290,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2E1BBAC27F44002003F0B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E1BBB327F44002003F0B5A /* GMPExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2E1BBB627F44002003F0B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E1BB9D27F4391F003F0B5A /* GMPExample */;
+			targetProxy = E2E1BBB527F44002003F0B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E2E1BBA527F4391F003F0B5A /* Debug */ = {
@@ -298,6 +427,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-l\"c++\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -313,9 +443,52 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-l\"c++\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2E1BBB827F44002003F0B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469522CB9AEB178CA33DF603 /* Pods-GMPExample-GMPExampleTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"gmp\"",
+					"-l\"gmpxx\"",
+					"-l\"c++\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IndigoFire.GMPExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2E1BBB927F44002003F0B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C3803A8A153D5E98DA6432 /* Pods-GMPExample-GMPExampleTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"gmp\"",
+					"-l\"gmpxx\"",
+					"-l\"c++\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IndigoFire.GMPExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -337,6 +510,15 @@
 			buildConfigurations = (
 				E2E1BBA827F4391F003F0B5A /* Debug */,
 				E2E1BBA927F4391F003F0B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E1BBB727F44002003F0B5A /* Build configuration list for PBXNativeTarget "GMPExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E1BBB827F44002003F0B5A /* Debug */,
+				E2E1BBB927F44002003F0B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

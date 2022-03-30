@@ -5,4 +5,8 @@ target 'GMPExample' do
   use_frameworks!
 
   pod 'GMP-Universal', :podspec => './GMP-Universal.podspec'
+
+  target 'GMPExampleTests' do
+    inherit! :complete
+  end
 end
