@@ -8,5 +8,7 @@
 #import "GMPExample.h"
 
 @implementation GMPExample
-
+-(NSString*)multiply:(NSNumber*)a with:(NSNumber*)b {
+    return @"";
+}
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E177F13EE7B1C70A56D4539F /* Pods_GMPExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */; };
 		E2E1BBA327F4391F003F0B5A /* GMPExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E1BBA227F4391F003F0B5A /* GMPExample.m */; };
 		E2E1BBA427F4391F003F0B5A /* GMPExample.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2E1BBA127F4391F003F0B5A /* GMPExample.h */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMPExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1847B165F8CF484B40D450AF /* Pods-GMPExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample.release.xcconfig"; path = "Target Support Files/Pods-GMPExample/Pods-GMPExample.release.xcconfig"; sourceTree = "<group>"; };
+		6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPExample.debug.xcconfig"; path = "Target Support Files/Pods-GMPExample/Pods-GMPExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E2E1BB9E27F4391F003F0B5A /* libGMPExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGMPExample.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E1BBA127F4391F003F0B5A /* GMPExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMPExample.h; sourceTree = "<group>"; };
 		E2E1BBA227F4391F003F0B5A /* GMPExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMPExample.m; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E177F13EE7B1C70A56D4539F /* Pods_GMPExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A997CECA068F363C305147F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A64BC36B7EF51A1668F8F1B /* Pods_GMPExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0424DB6D1AD430C0E4534B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */,
+				1847B165F8CF484B40D450AF /* Pods-GMPExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2E1BB9527F4391F003F0B5A = {
 			isa = PBXGroup;
 			children = (
 				E2E1BBA027F4391F003F0B5A /* GMPExample */,
 				E2E1BB9F27F4391F003F0B5A /* Products */,
+				4B0424DB6D1AD430C0E4534B /* Pods */,
+				3A997CECA068F363C305147F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E1BBA727F4391F003F0B5A /* Build configuration list for PBXNativeTarget "GMPExample" */;
 			buildPhases = (
+				F7442E019E975CE3D1323DBC /* [CP] Check Pods Manifest.lock */,
 				E2E1BB9A27F4391F003F0B5A /* Sources */,
 				E2E1BB9B27F4391F003F0B5A /* Frameworks */,
 				E2E1BB9C27F4391F003F0B5A /* CopyFiles */,
@@ -117,6 +142,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7442E019E975CE3D1323DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMPExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2E1BB9A27F4391F003F0B5A /* Sources */ = {
@@ -242,9 +292,13 @@
 		};
 		E2E1BBA827F4391F003F0B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DACE0AE1C271DBFE84FDAA1 /* Pods-GMPExample.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -253,9 +307,13 @@
 		};
 		E2E1BBA927F4391F003F0B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1847B165F8CF484B40D450AF /* Pods-GMPExample.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

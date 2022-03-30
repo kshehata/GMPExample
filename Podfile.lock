@@ -1,0 +1,16 @@
+PODS:
+  - GMP-Universal (6.2.1)
+
+DEPENDENCIES:
+  - GMP-Universal (from `./GMP-Universal.podspec`)
+
+EXTERNAL SOURCES:
+  GMP-Universal:
+    :podspec: "./GMP-Universal.podspec"
+
+SPEC CHECKSUMS:
+  GMP-Universal: 93025860cc3df0d00ef7e1c5eb95beaab6130334
+
+PODFILE CHECKSUM: 5139be7f7c175f7227806bc594ed1e5b83449505
+
+COCOAPODS: 1.11.2

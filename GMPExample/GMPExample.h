@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 
 @interface GMPExample : NSObject
-
+-(NSString*)multiply:(NSNumber*)a with:(NSNumber*)b;
 @end
